@@ -18,9 +18,22 @@
   --primary-bg-light: #E5E5E5;
   --secondary-bg-light: #F5F4FA;
   --light-bg: #FFFFFF;
-
+  
   /* Темна тема фону */
   --primary-bg-dark: #2F303A;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
@@ -33,7 +46,30 @@ body {
   color: var(--primary-txt-light);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
 .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -41,12 +77,39 @@ body {
   text-decoration: none;
 }
 
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Header */
 .header {
+  border: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   background-color: var(--light-bg);
 }
 
+.header-logo {
+  margin-right: 93px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -57,6 +120,33 @@ body {
 
 .logo-accent {
   color: var(--accent-cl-logo);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin: 0;
+}
+
+.auth-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-item {
+  margin-right: 50px;
+}
+
+.auth-item:last-child {
+  margin: 0;
 }
 
 .nav-link,
@@ -92,6 +182,13 @@ body {
 }
 
 .hero-tittle {
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,12 +201,21 @@ body {
 }
 
 .hero-btn {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   color: var(--primary-txt-dark);
   background-color: var(--accent-color);
