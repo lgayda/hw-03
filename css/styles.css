@@ -178,6 +178,8 @@ p:last-child {
 
 /* Hero */
 .hero {
+  padding: 200px 0;
+  
   background-color: var(--primary-bg-dark);
 }
 
@@ -187,7 +189,6 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 200px;
   
   font-weight: 900;
   font-size: 44px;
