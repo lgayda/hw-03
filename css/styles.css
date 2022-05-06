@@ -5,6 +5,7 @@
 
   --accent-cl-logo: #000000;
   --accent-color: #2196F3;
+  --accent-btn-color:#188CE8;
 
   /* Світла тема тексту */
   --primary-txt-light: #757575;
@@ -78,8 +79,8 @@ p:last-child {
 }
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -202,8 +203,7 @@ p:last-child {
 }
 
 .hero-btn {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -217,10 +217,18 @@ p:last-child {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
 
   color: var(--primary-txt-dark);
   background-color: var(--accent-color);
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-btn-color);
+}
+
 
 /* Specifics */
 .feature-tittle {
@@ -233,12 +241,41 @@ p:last-child {
   color: var(--secondary-txt-light);
 }
 
+.feature-list {
+  display: flex;
+}
+
+.feature-item {
+  margin-right: 30px;
+}
+
+.feature-item:last-child {
+  margin: 0;
+}
+
+.feature-tittle {
+  margin-bottom: 10px;
+}
+
 /* Examples, Team */
+.examples-list {
+  display: flex;
+}
+
+.examples-item {
+  margin-right: 30px;
+}
+
+.examples-item:last-child {
+  margin: 0;
+}
+
 .team {
   background-color: var(--secondary-bg-light);
 }
 
 .tittle {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -246,6 +283,18 @@ p:last-child {
   letter-spacing: 0.03em;
 
   color: var(--secondary-txt-light);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  margin-right: 30px;
+}
+
+.team-item:last-child {
+  margin: 0;
 }
 
 .team-name {
