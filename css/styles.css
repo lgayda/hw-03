@@ -43,7 +43,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  background-color: var(--primary-bg-light);
+  background-color: var(--light-bg);
   color: var(--primary-txt-light);
 }
 
@@ -87,8 +87,7 @@ p:last-child {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -110,6 +109,7 @@ p:last-child {
 }
 
 .logo {
+  display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -180,13 +180,13 @@ p:last-child {
 /* Hero */
 .hero {
   padding: 200px 0;
+  text-align: center;
   
   background-color: var(--primary-bg-dark);
 }
 
 .hero-tittle {
   width: 696px;
-  height: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -194,9 +194,7 @@ p:last-child {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 
   color: var(--primary-txt-dark);
@@ -211,9 +209,8 @@ p:last-child {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
   letter-spacing: 0.06em;
-  text-align: center;
+  
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -231,6 +228,10 @@ p:last-child {
 
 
 /* Specifics */
+.specifics {
+  padding-bottom: 0;
+}
+
 .feature-tittle {
   font-weight: 700;
   font-size: 14px;
@@ -246,6 +247,7 @@ p:last-child {
 }
 
 .feature-item {
+  width: 270px;
   margin-right: 30px;
 }
 
@@ -267,7 +269,7 @@ p:last-child {
 }
 
 .examples-item:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 .team {
@@ -276,6 +278,7 @@ p:last-child {
 
 .tittle {
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -290,18 +293,30 @@ p:last-child {
 }
 
 .team-item {
+  padding-bottom: 30px;
   margin-right: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--light-bg);
 }
 
 .team-item:last-child {
   margin: 0;
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--secondary-txt-light);
 }
@@ -311,11 +326,16 @@ p:last-child {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--primary-txt-light);
 }
 
 /* Portfolio */
+.menu-list {
+  display: flex;
+}
+
 .menu-btn {
   font-weight: 500;
   font-size: 16px;
@@ -354,7 +374,14 @@ color: var(--secondary-txt-light);
 
 /* Footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--primary-bg-dark);
+}
+
+.footer .logo {
+  margin-bottom: 20px;
 }
 
 .footer .logo-accent {
@@ -369,15 +396,24 @@ color: var(--secondary-txt-light);
   color: var(--primary-txt-dark);
 }
 
-.footer-link {
+.address-link {
   color: var(--secondary-txt-dark);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
-.footer-item {
+.address-item {
+  margin-bottom: 9px;
+
   color: var(--primary-txt-dark);
+}
+
+.address-item:last-child {
+  margin: 0;
+}
+.f-logo {
+  margin-bottom: 20px;
 }
