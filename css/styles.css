@@ -401,14 +401,9 @@ p:last-child {
 }
 
 .address-item {
-  margin-bottom: 9px;
-
   color: var(--primary-txt-dark);
 }
 
-.address-item:last-child {
-  margin: 0;
-}
-.f-logo {
-  margin-bottom: 20px;
+.address-item:not(:last-child) {
+  margin: 9;
 }
