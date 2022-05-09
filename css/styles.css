@@ -93,8 +93,6 @@ p:last-child {
 /* Header */
 .header {
   border: 1px solid #ECECEC;
-  padding-top: 24px;
-  padding-bottom: 25px;
 
   background-color: var(--light-bg);
 }
@@ -108,8 +106,14 @@ p:last-child {
   align-items: center;
 }
 
+.header .link {
+  display: block;
+  padding: 32px 0;
+}
+
 .logo {
   display: block;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -128,8 +132,13 @@ p:last-child {
   align-items: center;
 }
 
-.nav-item:not(:last-child) {
+/* .nav-item:not(:last-child) {
   margin-right: 50px;
+} */
+
+.nav-item + .nav-item,
+.auth-item + .auth-item {
+  margin-left: 50px;
 }
 
 .auth-list {
@@ -138,9 +147,9 @@ p:last-child {
   margin-left: auto;
 }
 
-.auth-item:not(:last-child) {
+/* .auth-item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 .nav-link,
 .auth-link {
@@ -320,6 +329,7 @@ p:last-child {
 /* Portfolio */
 .menu-list {
   display: flex;
+  justify-content: center;
 }
 
 .menu-btn {
