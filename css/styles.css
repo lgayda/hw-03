@@ -328,17 +328,27 @@ p:last-child {
 
 /* Portfolio */
 .menu-list {
+  margin-bottom: 50px;
+
   display: flex;
   justify-content: center;
 }
 
+.menu-item +.menu-item {
+  margin-left: 8px;
+}
+
 .menu-btn {
+  padding: 6px 22px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 
   background-color: var(--secondary-bg-light);
   color: var(--secondary-txt-light);
@@ -348,9 +358,48 @@ p:last-child {
 .menu-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-txt-dark);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  /* width: 370px; */
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+/* .card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+.card-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* .card-item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 30px;
+} */
+
+.card-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
+.card-link {
+  display: block;
+}
+
+.card-img {
+  margin-bottom: 20px;
 }
 
 .card-tittle {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
