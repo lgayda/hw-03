@@ -399,10 +399,6 @@ img{
   display: block;
 }
 
-.card-img {
-  display: block;
-}
-
 .card-content {
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
