@@ -74,6 +74,12 @@ p:last-child {
   list-style: none;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
 }
@@ -92,7 +98,7 @@ p:last-child {
 
 /* Header */
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 
   background-color: var(--light-bg);
 }
@@ -108,7 +114,7 @@ p:last-child {
 
 .header .link {
   display: block;
-  padding: 32px 0;
+  padding: 24px 0;
 }
 
 .logo {
@@ -391,10 +397,17 @@ p:last-child {
 
 .card-link {
   display: block;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .card-img {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.card-content {
+  padding: 20px 24px;
 }
 
 .card-tittle {
