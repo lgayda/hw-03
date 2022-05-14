@@ -397,9 +397,6 @@ img{
 
 .card-link {
   display: block;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
 }
 
 .card-img {
@@ -408,6 +405,9 @@ img{
 
 .card-content {
   padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .card-tittle {
